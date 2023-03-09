@@ -1,0 +1,84 @@
+.footer{
+    background-color: #FFFFFF;
+    padding: 64px 0;
+    width: 100%;
+    position: absolute;
+    
+    ul{
+        margin: 0;
+        padding: 0;
+    }
+    li{
+        list-style-type: none;
+    }
+    &__items{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        &-links{
+            @media (max-width: 768px) {
+                width: 100%;
+               }
+        }
+        &-storelinks{
+            margin: 25px 0 17px 0;
+            .first{
+                margin-right: 14px;
+            }
+        }
+        &-litlegrey{
+            font-family: Inter-Medium;
+            font-size: 14px;
+            color: #9E9E9E;
+        }
+         &-politics{
+            @media (max-width: 768px) {
+                display: none;
+               }
+         }
+        .pd{
+            margin-bottom: 72px;
+            @media (max-width: 768px) {
+                margin-bottom: 32px;
+               }
+        }
+        .rirst{
+            padding: 0;
+        }
+        &-standart{
+            li{
+                padding: 8px;
+            }
+            @media (max-width: 768px) {
+                width: 50%;
+               }
+        }
+        &-social{
+            @media (max-width: 768px) {
+                width: 50%;
+               }
+        }
+        &-socialIcon{
+            padding: 15px 0 21px 0;
+            .first{
+                margin-right: 15px;
+            }
+        }
+
+        &-btn{
+            button{
+                display: flex;
+                gap: 12px;
+                width: 174px;
+                height: 44px;
+                background: #F5F5F7;
+                border-radius: 10px;
+                font-family: Inter-Medium;
+                font-size: 16px;
+                color: #039BE5;
+                align-items: center;
+                border: none;
+            }
+        }
+    }
+}

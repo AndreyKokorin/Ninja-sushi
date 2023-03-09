@@ -1,0 +1,100 @@
+
+
+.header{
+    margin-top: 16px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 7px 0;
+    @media (max-width: 768px) {
+        margin-top: 4px;
+      }
+    .wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__logo{
+        @media (max-width: 1280px) {
+            img{
+                width: 150px;
+            height: 40px;
+            }
+            
+          }
+    }
+
+    &__links{
+        @media (max-width: 1280px) {
+           display: none;
+          }
+        &_list:first-child{
+           margin: 0;
+        }
+        ul{
+            &:first-child{
+                margin: 0;
+            }
+        }
+        li{
+            text-decoration: none;
+            display: inline-block;
+            margin: 0 25px;
+            font-family: Inter-Medium;
+            font-style: 16px;
+            cursor: pointer;
+        }
+        .number{
+            display: inline-flex;
+            align-items: center;
+            .header__number_img{
+                margin-right: 10px;
+            }
+        }
+    }
+    &__btns{
+        display: flex;
+        &_text{
+            margin-right: 10px;
+            font-family: Inter-Medium;
+            color: #686870;
+            font-size: 16px;
+        }
+        .burger{
+            flex-direction: column;
+            display: none;
+            .line1, .line2, .line3{
+                width: 20px;
+                height: 1.5px;
+                background: #000000;
+                margin: 0;
+            }
+            .line2{
+                margin: 3px 0;
+            }
+            @media (max-width: 1280px) {
+                display: flex;
+            }
+        }
+       &_item{
+            padding: 8px;
+            border: 1px solid #D2D2D7;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            align-items: center;
+            margin: 0 8px;
+            cursor: pointer;
+            @media (max-width: 560px) {
+                padding: 7px;
+                margin: 0 4px;
+               }
+       }
+       .busket{
+        @media (max-width: 560px) {
+            display: none;
+           }
+       }
+    }
+}

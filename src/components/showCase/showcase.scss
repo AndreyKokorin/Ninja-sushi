@@ -1,0 +1,138 @@
+.showcase{
+    margin: 125px 0;
+    text-align: left;
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        &-title{
+            font-family: Inter-Bold;
+            font-size: 48px;
+        }
+        &-showAll{
+            .btn{
+                width: 159px;
+                height: 48px;
+                background: #FFFFFF;
+                border-radius: 10px;
+                font-family: Inter-Medium;
+                font-size: 16px;
+                color: #00CC2D;
+                border: none;
+                cursor: pointer;
+                text-align: center;
+            }
+        }
+    }
+    &__list{
+        padding-top: 32px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-between;
+    }
+    &__elem{
+        width: 413px;
+        height: 620px;
+        position: relative;
+        background: #FFFFFF;
+        border-radius: 10px;
+        padding: 20px;
+        box-sizing: border-box;
+        &-wrap{
+            display: flex;
+            flex-direction: column;
+            @media (max-width: 768px) {
+                flex-direction: row;
+               }
+        }
+        &-img{
+            @media (max-width: 768px) {
+                img{
+                    width: 96px;
+                height: 96px; 
+                }
+               
+               }
+        }
+        @media (max-width: 1280px) {
+            width: 364px;
+            height: 600px;
+          }
+          @media (max-width: 768px) {
+            width: 100%;
+            height: 188px;
+           }
+        &-title{
+            font-family: Inter-Bold;
+            font-size: 27px;
+            padding: 12px 0;
+            @media (max-width: 768px) {
+                font-size: 16px;
+                padding: 6px 0;
+                }
+        }
+        &-weigth{
+            font-family: Inter-Medium;
+            font-size: 18px;
+            color: #FF6633;
+            @media (max-width: 768px) {
+                font-size: 12px;
+                }
+        }
+        &-descr{
+            font-family: Inter-Regular;
+            font-size: 16px;
+            color: #686870;
+            margin-top: 8px;
+            @media (max-width: 768px) {
+                font-size: 12px;
+                margin-top: 6px;
+                }
+        }
+        &-footer{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 72px;
+            position: absolute;
+            bottom: 25px;
+            width: 90%;
+            @media (max-width: 768px) {
+                margin-top: 8px;
+                bottom: 10px;
+                width: 60%;
+                }
+        }
+        &-price{
+            font-family: Inter-Bold;
+            font-size: 40px;
+            @media (max-width: 768px) {
+                font-size: 24px;
+                }
+            span{
+                font-size: 26px;
+                color: #686870;
+                @media (max-width: 768px) {
+                    font-size: 16px;
+                    }
+            }
+           
+        }
+        &-plusbtn{
+            button{
+                width: 76px;
+                height: 48px;
+                background: #CCF5D5;
+                border-radius: 10px;
+                font-size: 40px;
+                color: #00CC2D;;
+                border: none;
+                cursor: pointer;
+                @media (max-width: 768px) {
+                    width: 56px;
+                    height: 40px;
+                    font-size: 25px;
+                    }
+            }
+        }
+    }
+}
